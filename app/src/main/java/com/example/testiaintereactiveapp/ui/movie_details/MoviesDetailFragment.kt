@@ -1,16 +1,15 @@
-package com.example.testiaintereactiveapp.ui.movies
+package com.example.testiaintereactiveapp.ui.movie_details
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.example.testiaintereactiveapp.databinding.FragmentMovieBillboardBinding
+import com.example.testiaintereactiveapp.databinding.FragmentMovieDetailBinding
 
-class MovieBillboardFragment : Fragment() {
+class MoviesDetailFragment : Fragment() {
 
-    private var _binding: FragmentMovieBillboardBinding? = null
+    private var _binding: FragmentMovieDetailBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,7 +21,7 @@ class MovieBillboardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentMovieBillboardBinding.inflate(inflater, container, false)
+        _binding = FragmentMovieDetailBinding.inflate(inflater, container, false)
         val root: View = binding.root
         return root
     }
